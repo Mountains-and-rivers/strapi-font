@@ -23,19 +23,7 @@ React boilerplate with ES2015, Express.js, and Webpack
 
 Demo UI view:
 
-![Demo view](https://raw.githubusercontent.com/antonfisher/react-express-webpack/docs/images/rew2-ui-screenshot.png)
-
-Development `.js` bundles:
-
-![Development js bundles](https://raw.githubusercontent.com/antonfisher/react-express-webpack/docs/images/rew-stat-dev.png)
-
-Production `.js` bundles:
-
-![Production js bundles](https://raw.githubusercontent.com/antonfisher/react-express-webpack/docs/images/rew-stat-prod.png)
-
-Production mode server output:
-
-![Production js bundles](https://raw.githubusercontent.com/antonfisher/react-express-webpack/docs/images/rew-log-prod.png)
+My React App!
 
 ## Usage
 
