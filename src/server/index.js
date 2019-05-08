@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const setupApiRoutes = require('./middlewares/api');
 const logger = require('./logger');
-
+const proxy = require('http-proxy-middleware');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 process.env.HTTP_PORT = process.env.HTTP_PORT || 3000;
 
@@ -30,7 +30,7 @@ logger.info(`Application env: ${process.env.NODE_ENV}`);
 
 app.use(logger.expressMiddleware);
 app.use(bodyParser.json());
-
+app.use('/products', proxy({target: 'http://47.111.77.29:1337', changeOrigin: true}));
 // application routes
 setupApiRoutes(app);
 setupAppRoutes(app);
