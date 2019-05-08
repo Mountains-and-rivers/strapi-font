@@ -30,7 +30,10 @@ logger.info(`Application env: ${process.env.NODE_ENV}`);
 
 app.use(logger.expressMiddleware);
 app.use(bodyParser.json());
-app.use('/products', proxy({target: 'http://47.111.77.29:1337', changeOrigin: true}));
+app.use('/api', proxy({target: 'http://47.111.77.29:1337', changeOrigin: true, pathRewrite:
+function (path,req) {
+  return path.replace('/api', '')
+}}));
 // application routes
 setupApiRoutes(app);
 setupAppRoutes(app);

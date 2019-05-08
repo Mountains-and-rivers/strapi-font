@@ -5,7 +5,7 @@ import axios from 'axios';
 
 // Request API.
 axios
-  .get('/products', {
+  .get('/api/products', {
   })
   .then(response => {
     // Handle success.
