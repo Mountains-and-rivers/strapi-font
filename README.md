@@ -1,0 +1,2 @@
+# strapi-font
+strapi-font
