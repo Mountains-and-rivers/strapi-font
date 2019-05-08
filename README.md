@@ -29,7 +29,7 @@ My React App!
 
 ### Installation
 ```bash
-git clone git@github.com:antonfisher/react-express-webpack.git
+git clone https://github.com/Mountains-and-rivers/strapi-font.git
 cd react-express-webpack
 npm install
 
