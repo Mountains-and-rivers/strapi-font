@@ -30,7 +30,7 @@ My React App!
 ### Installation
 ```bash
 git clone https://github.com/Mountains-and-rivers/strapi-font.git
-cd react-express-webpack
+cd strapi-font
 npm install
 
 # remove boilerplate git references
